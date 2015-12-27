@@ -46,7 +46,7 @@ public class Unifiedorder {
 	private String out_trade_no;
 
 	@XmlElement
-	private String total_fee;
+	private Integer total_fee;
 
 	@XmlElement
 	private String spbill_create_ip;
@@ -136,11 +136,11 @@ public class Unifiedorder {
 		this.out_trade_no = out_trade_no;
 	}
 
-	public String getTotal_fee() {
+	public Integer getTotal_fee() {
 		return total_fee;
 	}
 
-	public void setTotal_fee(String total_fee) {
+	public void setTotal_fee(Integer total_fee) {
 		this.total_fee = total_fee;
 	}
 
