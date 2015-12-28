@@ -65,6 +65,9 @@ public class Unifiedorder {
 
 	@XmlElement
 	private String trade_type;
+	
+	@XmlElement
+	private String fee_type;
 
 	@XmlElement
 	private String openid;
@@ -190,6 +193,14 @@ public class Unifiedorder {
 
 	public void setTrade_type(String trade_type) {
 		this.trade_type = trade_type;
+	}
+
+	public String getFee_type() {
+		return fee_type;
+	}
+
+	public void setFee_type(String fee_type) {
+		this.fee_type = fee_type;
 	}
 
 	public String getOpenid() {
