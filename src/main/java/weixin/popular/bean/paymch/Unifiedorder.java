@@ -10,11 +10,12 @@ import weixin.popular.bean.AdaptorCDATA;
 
 /**
  * 统一支付请求参数
+ * 
  * @author Yi
  *
  */
 
-@XmlRootElement(name="xml")
+@XmlRootElement(name = "xml")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Unifiedorder {
 
@@ -46,7 +47,7 @@ public class Unifiedorder {
 	private String out_trade_no;
 
 	@XmlElement
-	private Integer total_fee;
+	private String total_fee;
 
 	@XmlElement
 	private String spbill_create_ip;
@@ -65,7 +66,7 @@ public class Unifiedorder {
 
 	@XmlElement
 	private String trade_type;
-	
+
 	@XmlElement
 	private String fee_type;
 
@@ -139,11 +140,11 @@ public class Unifiedorder {
 		this.out_trade_no = out_trade_no;
 	}
 
-	public Integer getTotal_fee() {
+	public String getTotal_fee() {
 		return total_fee;
 	}
 
-	public void setTotal_fee(Integer total_fee) {
+	public void setTotal_fee(String total_fee) {
 		this.total_fee = total_fee;
 	}
 
@@ -218,6 +219,5 @@ public class Unifiedorder {
 	public void setProduct_id(String product_id) {
 		this.product_id = product_id;
 	}
-
 
 }
